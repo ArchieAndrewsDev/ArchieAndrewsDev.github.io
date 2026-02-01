@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeah I got a blog now... - Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body id="top">
+    <div class="background-grid"></div>
+
+    <header>
+        <h1 class="site-title">ARCHIE ANDREWS</h1>
+        <nav class="site-nav">
+            <a href="../../index.html" class="nav-button">Portfolio</a>
+            <a href="../index.html" class="nav-button nav-active">Blog</a>
+        </nav>
+    </header>
+
+    <main>
+        
+<div class="blog-layout">
+    <aside class="tile blog-sidebar-tile">
+        <h3 class="blog-sidebar-title">ALL POSTS</h3>
+        <nav class="blog-nav">
+            
+            <details open>
+                <summary>2026</summary>
+                <ul>
+                    
+                    <li class="current">
+                        <a href="../2026/yeah-i-got-a-blog-now.html">Yeah I got a blog now...</a>
+                    </li>
+                    
+                </ul>
+            </details>
+            
+        </nav>
+    </aside>
+
+    <article class="tile blog-content">
+        <a href="../index.html" class="blog-back-button">← Return to blogs</a>
+        <h1>YEAH I GOT A BLOG NOW...</h1>
+        <time>2026-02-01</time>
+        <div class="blog-post-body">
+            <p>So I got a trial to Claude Code and decided to use it for the one thing I really <strong>REALLY</strong> don't want to touch and thats web dev.
+<br>
+I've never really had a portfolio site that I was happy with and it's not the sort of thing that I wanted to pay for. I'm not a massive fan of CMS tools like WordPress and most static site generators feel too much like web dev for me to want to go near them.
+<br>
+So I set out to get Claude to build me something bespoke for me and my needs.
+<br>
+<br>
+What I wanted was the following...
+- A tool to generate a static site based on a fixed template.
+- For the static site to act as a portfolio and blogging site.
+- To have the site hosted on GitHub Pages.
+- A way to edit the site without having to touch html, css or any other web dev tools.
+<br>
+I got Claude to make this in two parts which I think might have been a mistake. <br></p>
+<h1>Step 1 - Site</h1>
+<p>I wrote up a plan for my static site. I made .md files outlining the type of content I wanted. I made rough paint drawings of the layouts I wanted for the pages and content and described in .md files how it should be build and the restrictions it should follow. 
+<br>
+Next I got claude to read through all my planning documents and build a full step by step plan for the site. I read through the plan and provided some nudges and feedback. I then started a new agent and asked it to review this plan and look for mistakes. I was a little surprised how many mistakes it found so I went through once again and tried to find anything that jumped out.
+<br>
+Once I had the plan finished by Claude I started a new agent and asked it to execute the plan. It did this pretty well and made what I had planned exactly. Minus a few small bugs it did follow my plan well but the plan had some gaps which it didn't fill. This highlighted to me the importance of knowing what your actually doing with these tools. I can beat Claude into doing what I want with minimal guidance all day long but it's going to take a while and a lot of resources to get what I want out of it. 
+<br>
+Once I had the site generated I posted it to my pages repo and it worked really well. The next step was blogging.</p>
+<h1>Step 2 - CMS</h1>
+<p>When I came back to this the following week to look at adding blogs I knew I wanted a tool that I self host on my home server that would generate blog posts and commit/push them to the static page repo.
+<br>
+After about 10 mins of writing a plan for this I realized that this is just a CMS and I ideally want a full CMS for the whole site. In hindsight I think I should have planned this in the original as I struggled to get Claude to wrap it's brain around what I wanted even with the context of the old site plans. I think it mainly got confused about the 2 projects.
+<br>
+Either way with a similar process I got Claude to spit me out a nice simple bespoke cms that I can spin up in docker and commit/push to the pages repo. Now thats what I'm sat here on writing this blog post. </p>
+<h1>Conclusion</h1>
+<p>Really I just wrote this so there was a blog post to start this off. I'm not sure how I feel about Claude Code right now, it's been fun to make something fast that is exactly what I want without having to deal with bloated tools or things made by someone else for their specific use case. I'm planning on trying it in a workflow for game engine stuff but it will have to be a lot more hands off than webdev. My thinking is to use it like being sat next to another programmer, asking it for help with an API or how it would approach an problem. I don't think it would be great at whipping features out out of thin air. We will have to see...
+<br>
+I also don't know how I feel about not writing code. My job is education so I don't get to write a lot of code outside of fundamental stuff in Unity, so writing code is my pass time and my hobby. As long as it's not web dev I want to be the one writing the code and enjoying the process.
+<br><br></p>
+<p>As for this blog, I really want to document the backlog of unfinished project or silly game ideas I have had as I tend not to post about it anywhere and I got a big folder of failed projects I want to show people :D
+<br>
+Here are some pictures of the CMS aswell, if your interested.</p>
+<p><a href="#blog-img-yeah-i-got-a-blog-now-0" class="blog-img-link"><img alt="Image" src="https://s3.archieandrews.games/blog/85bfe613_2026-02-01_01_16_14-New_Post_-_Portfolio_CMS_Mozilla_Firefox.webp" /></a></p>
+<p><a href="#blog-img-yeah-i-got-a-blog-now-1" class="blog-img-link"><img alt="Image" src="https://s3.archieandrews.games/blog/e27f5b42_2026-02-01_01_16_23-Tiles_-_Portfolio_CMS_Mozilla_Firefox.webp" /></a></p>
+<p><a href="#blog-img-yeah-i-got-a-blog-now-2" class="blog-img-link"><img alt="Image" src="https://s3.archieandrews.games/blog/2be5132f_2026-02-01_01_16_31-Publish_-_Portfolio_CMS_Mozilla_Firefox.webp" /></a></p>
+        </div>
+    </article>
+</div>
+
+    </main>
+
+    
+
+<div id="blog-img-yeah-i-got-a-blog-now-0" class="blog-lightbox">
+    <a href="#" class="blog-lightbox-close">Close</a>
+    <div class="blog-lightbox-content">
+        <img alt="Image" src="https://s3.archieandrews.games/blog/85bfe613_2026-02-01_01_16_14-New_Post_-_Portfolio_CMS_Mozilla_Firefox.webp" />
+    </div>
+    <a href="#" class="blog-lightbox-backdrop"></a>
+</div>
+
+<div id="blog-img-yeah-i-got-a-blog-now-1" class="blog-lightbox">
+    <a href="#" class="blog-lightbox-close">Close</a>
+    <div class="blog-lightbox-content">
+        <img alt="Image" src="https://s3.archieandrews.games/blog/e27f5b42_2026-02-01_01_16_23-Tiles_-_Portfolio_CMS_Mozilla_Firefox.webp" />
+    </div>
+    <a href="#" class="blog-lightbox-backdrop"></a>
+</div>
+
+<div id="blog-img-yeah-i-got-a-blog-now-2" class="blog-lightbox">
+    <a href="#" class="blog-lightbox-close">Close</a>
+    <div class="blog-lightbox-content">
+        <img alt="Image" src="https://s3.archieandrews.games/blog/2be5132f_2026-02-01_01_16_31-Publish_-_Portfolio_CMS_Mozilla_Firefox.webp" />
+    </div>
+    <a href="#" class="blog-lightbox-backdrop"></a>
+</div>
+
+
+</body>
+</html>
