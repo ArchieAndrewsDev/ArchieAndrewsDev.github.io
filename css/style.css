@@ -376,34 +376,20 @@ main {
     position: relative;
 }
 
+/* Three lines max; the fade stops are fixed lengths so only a third line fades,
+   and shorter descriptions stay fully visible */
 .tile-description {
     font-size: 0.85rem;
     color: var(--text-secondary);
     line-height: 1.6;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    max-height: 4.8em;
     overflow: hidden;
     overflow-wrap: break-word;
     word-break: break-word;
-    position: relative;
     margin-bottom: 0.5rem;
+    -webkit-mask-image: linear-gradient(to bottom, black 3.2em, transparent 4.8em);
+    mask-image: linear-gradient(to bottom, black 3.2em, transparent 4.8em);
 }
-
-.tile-ellipsis {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    background: linear-gradient(to left, var(--tile-bg) 60%, transparent 100%);
-    padding-left: 1em;
-    line-height: 1.6;
-}
-
-.tile-ellipsis span:nth-child(1) { opacity: 1; }
-.tile-ellipsis span:nth-child(2) { opacity: 0.6; }
-.tile-ellipsis span:nth-child(3) { opacity: 0.25; }
 
 .tile-description-wrapper.has-preview {
     flex: 1 1 auto;
@@ -955,6 +941,11 @@ main {
     color: var(--text-secondary);
     line-height: 1.6;
     margin-bottom: 1rem;
+}
+
+.blog-post-preview.is-truncated {
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
 
 .blog-read-more {
