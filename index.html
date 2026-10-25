@@ -71,9 +71,21 @@
                         
                         <p>For most of 2026 I looked after version control for a fan-made cinematic based on Dark Souls 3. The brief was for something a team of five could work on together, handling an Unreal project with lots of large art assets. My own goals were to keep costs as low as possible while preventing data loss.</p>
                         
+                        <p class="tile-preview-heading">The setup</p>
+                        
+                        <p>In January I set up an Azure DevOps organisation to host the git repo. It wasn’t the perfect solution, but it was free for our five users, with a 250 GB repo limit that included LFS files. Managing it was simple, and getting the artists and animators onto the Fork git client made everything straightforward for them and for me.</p>
+                        
                         <p>Fork is what I use day to day for game engine work and beyond. In my opinion it’s the best git client out there: quick, stable, friendly for people who don’t know git well, and affordable ($59.99 for a lifetime licence, with a free evaluation). Not and ad I just really like this client!</p>
                         
                         <p>Working with Jonjo, Sophie, Antonio, Tammy and Jean was a dream. I wrote some basic documentation for anyone new to git, then heard very little from them as they powered through their work, committing regularly to the repo.</p>
+                        
+                        <p class="tile-preview-heading">Backups</p>
+                        
+                        <p>I run my own Gitea server at home with plenty of storage for a project like this, and I did test it with a few people when I started looking at solutions. In the end I decided against it, because I needed the repo available 24/7, which I couldn’t guarantee with my Cornish home internet :( As a middle ground, I synced the repo to my Gitea server so I had a full copy with its history, and that copy went into my weekly off-site backup.</p>
+                        
+                        <p class="tile-preview-heading">What I’d do next time</p>
+                        
+                        <p>If I worked on a project like this again, I’d be keen to automate regular renders, so people like Jonjo could review changes without being at their workstation with the project pulled and open. I’m thinking a git workflow that renders shots at low resolution and frame rate on each commit, or at the end of the day for larger shots, with a manual trigger for a full-quality render. Depending on costs I would aim to keep the render server on cloud in order to scale quickly with the project. I&#39;m going to play around with this on my home server but might need something a little faster than the 1050 in there at the moment.</p>
                         
                         <p>It’s been great working with a team of professionals and watching this project develop over the months I was involved. Thank you again, Jonjo and co, for letting me play a small part in it!</p>
                         
